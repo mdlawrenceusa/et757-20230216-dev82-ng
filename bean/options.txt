@@ -1,0 +1,27 @@
+[
+    {
+        "Namespace": "aws:autoscaling:launchconfiguration",
+        "OptionName": "IamInstanceProfile",
+        "Value": "aws-elasticbeanstalk-ec2-role"
+    },
+    {
+        "Namespace": "aws:autoscaling:launchconfiguration",
+        "OptionName": "SecurityGroups",
+        "Value": "sg-0cea3e1497009b826"
+    },
+    {
+        "Namespace": "aws:ec2:vpc",
+        "OptionName": "VPCId",
+        "Value": "vpc-01c001a0d5c5746d0"
+    },
+    {
+        "Namespace": "aws:ec2:vpc",
+        "OptionName": "Subnets",
+        "Value": "subnet-0346cd60d2130259b,subnet-0400a4c07dc097b59"
+    },
+    {
+        "Namespace": "aws:elasticbeanstalk:application:environment",
+        "OptionName": "APP_DB_HOST",
+        "Value": "supplierdb.cluster-ct6ulq7qmzjr.us-east-1.rds.amazonaws.com"
+    }
+]
