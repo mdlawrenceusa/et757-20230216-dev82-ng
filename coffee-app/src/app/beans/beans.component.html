@@ -1,6 +1,29 @@
-<h1>Coffee Beans</h1>
-<ul>
-  <li *ngFor="let bean of beans">
-    {{ bean.product_name }} - {{ bean.price }}
-  </li>
-</ul>
+<section class="jumbotron">
+    <div class="container">
+      <div class="row text-center">
+        <h2>Coffee Beans</h2>
+        <h3>The Worlds Finest</h3>
+        <a class="btn btn-primary" href="#">See all</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <h1>Coffee Beans</h1>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let bean of beans">
+        <div class="panel panel-default" [ngClass]="{'panel-arabica': bean.type === 'Arabica', 'panel-robusta': bean.type === 'Robusta', 'panel-liberica': bean.type === 'Liberica', 'panel-excelsa': bean.type === 'Excelsa'}">
+          <div class="panel-heading">
+            <h3 class="panel-title">{{ bean.product_name }} - ${{ bean.price }}</h3>
+            <img src="http://c72669a1464075l3421225t1w412817738288-s3bucket-s7d49mlvg5ce.s3-website-us-east-1.amazonaws.com/images/beans/robusta.png" alt="Bean" class="bean-image">
+          </div>
+          <div class="panel-body">
+            <p>Type: {{ bean.type }}</p>
+            <p>Description: {{ bean.description }}</p>
+            <p>Quantity: {{ bean.quantity }}</p>
+            <p>Supplier ID: {{ bean.supplier_id }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -5,11 +5,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BeansComponent } from './beans/beans.component';
+import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomemadeComponent } from './homemade/homemade.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BeansComponent
+    BeansComponent,
+    NavComponent,
+    FooterComponent,
+    HomemadeComponent
   ],
   imports: [
     BrowserModule,

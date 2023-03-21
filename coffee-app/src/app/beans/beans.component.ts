@@ -13,7 +13,7 @@ export class BeansComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<any[]>('https://9cl86gdl2j.execute-api.us-east-1.amazonaws.com/prod/bean_products')
+    this.http.get<any[]>('https://if899ldo5k.execute-api.us-east-1.amazonaws.com/prod/bean_products')
       .subscribe((data: any[]) => {
         this.beans = data;
       });
